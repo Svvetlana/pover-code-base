@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 3px solid green;
+    &__item {
+        width: 32%;
+        min-height: 100px;
+        margin-bottom: 30px;
+        background-color: lightsalmon;
+        border: 1px solid red;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    border: 3px solid orange;
+    gap: 30px;
+    &__item {
+        min-height: 100px;
+        background-color: lightskyblue;
+        border: 1px solid blue;
+    }
+}
